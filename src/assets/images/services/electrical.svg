@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#fef3c7"/>
+  <g transform="translate(400, 200)">
+    <circle cx="0" cy="0" r="80" fill="#fbbf24" opacity="0.3"/>
+    <path d="M-30 -60 L10 -20 L-10 -20 L-10 20 L30 -40 L-10 0 L10 0 L10 60 Z" fill="#f59e0b" stroke="#d97706" stroke-width="3"/>
+    <circle cx="0" cy="-80" r="15" fill="#fbbf24"/>
+    <circle cx="-60" cy="-40" r="10" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="60" cy="-40" r="10" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="-80" cy="20" r="8" fill="#fbbf24" opacity="0.4"/>
+    <circle cx="80" cy="20" r="8" fill="#fbbf24" opacity="0.4"/>
+  </g>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="24" fill="#d97706" text-anchor="middle" font-weight="bold">
+    Electrical Services & Repairs
+  </text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "home-repair-services",
+  "version": "1.0.0",
+  "description": "Home Repair Services website built with Eleventy and UnoCSS",
+  "scripts": {
+    "dev": "concurrently \"npm run serve\" \"npm run css:watch\"",
+    "build": "npm run css:build && eleventy",
+    "serve": "eleventy --serve --port=8080",
+    "css:build": "unocss \"src/**/*.{html,md,njk}\" --out-file src/assets/css/styles.css",
+    "css:watch": "unocss \"src/**/*.{html,md,njk}\" --out-file src/assets/css/styles.css --watch",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@unocss/cli": "^0.58.0",
+    "concurrently": "^8.2.2",
+    "unocss": "^0.58.0"
+  },
+  "dependencies": {}
+}

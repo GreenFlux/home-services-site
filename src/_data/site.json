@@ -1,0 +1,65 @@
+{
+  "title": "Home Repair Services",
+  "description": "Professional home repair and maintenance services for all your residential needs. Quality workmanship, reliable service, and competitive pricing.",
+  "url": "https://homerepairservices.com",
+  "contact": {
+    "email": "info@homerepairservices.com",
+    "phone": "(555) 123-4567",
+    "address": "123 Service Street, Your City, ST 12345",
+    "hours": "Monday - Friday: 8:00 AM - 6:00 PM, Saturday: 9:00 AM - 4:00 PM"
+  },
+  "theme": {
+    "primaryColor": "#2563EB",
+    "secondaryColor": "#1E293B"
+  },
+  "navigation": [
+    { "text": "Home", "url": "/" },
+    { "text": "About", "url": "/about/" },
+    { "text": "Services", "url": "/services/" },
+    { "text": "Blog", "url": "/blog/" },
+    { "text": "Contact", "url": "/contact/" }
+  ],
+  "services": [
+    {
+      "name": "Plumbing Services",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z'/></svg>",
+      "description": "From leaky faucets to complete pipe replacements, our certified plumbers handle all residential plumbing needs.",
+      "features": ["Leak repairs", "Pipe installation", "Drain cleaning", "Water heater service"]
+    },
+    {
+      "name": "Electrical Work",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M13 2L3 14h9v8l10-12h-9V2z'/></svg>",
+      "description": "Licensed electricians providing safe, code-compliant electrical installations and repairs for your home.",
+      "features": ["Outlet installation", "Lighting fixtures", "Circuit repairs", "Panel upgrades"]
+    },
+    {
+      "name": "HVAC Services",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M14 22C18.42 22 22 18.42 22 14S18.42 6 14 6C11.64 6 9.54 7.25 8.32 9.13L9.7 10.5C10.5 9.08 12.14 8 14 8C17.31 8 20 10.69 20 14S17.31 20 14 20C11.53 20 9.41 18.38 8.71 16.09L6.78 16.75C7.76 20.31 10.62 22 14 22Z'/><path d='M12 18H6V16H12V18M12 14H4V12H12V14M12 10H2V8H12V10Z'/></svg>",
+      "description": "Keep your home comfortable year-round with our heating, ventilation, and air conditioning services.",
+      "features": ["AC repair", "Heating maintenance", "Duct cleaning", "System installation"]
+    },
+    {
+      "name": "Flooring Installation",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/></svg>",
+      "description": "Transform your space with professional flooring installation including hardwood, tile, and laminate.",
+      "features": ["Hardwood installation", "Tile work", "Carpet installation", "Floor repairs"]
+    },
+    {
+      "name": "Interior Painting",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M12,2C13.1,2 14,2.9 14,4C14,5.1 13.1,6 12,6C10.9,6 10,5.1 10,4C10,2.9 10.9,2 12,2M21,9V7L15,1L13.5,2.5L14.17,3.17L7.91,9.43C7.66,9.18 7.32,9 6.96,9H3C2.45,9 2,9.45 2,10V14C2,14.55 2.45,15 3,15H6.96C7.32,15 7.66,14.82 7.91,14.57L14.17,20.83L13.5,21.5L15,23L21,17V15H19.5L14.5,10H21M7.91,10.57L11.5,7L16.5,12L12.91,15.57L9.5,12.16V11.84L7.91,10.57Z'/></svg>",
+      "description": "Professional interior painting services to refresh and beautify your home's interior spaces.",
+      "features": ["Room painting", "Trim work", "Color consultation", "Surface preparation"]
+    },
+    {
+      "name": "General Repairs",
+      "icon": "<svg class='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'><path d='M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74C8.5 8.3 9.59 4.16 13.03 2.39C16.47 .62 20.61 1.71 22.38 5.15C24.15 8.59 23.06 12.73 19.62 14.5C18.96 14.8 18.23 15 17.5 15V10.1M9.34 11.95C8.93 12.79 8.93 13.79 9.34 14.63C9.75 15.47 10.5 16.05 11.4 16.22L9.34 11.95Z'/></svg>",
+      "description": "Comprehensive handyman services for all those small to medium repairs around your home.",
+      "features": ["Drywall repairs", "Door installation", "Window repairs", "General maintenance"]
+    }
+  ],
+  "social": {
+    "facebook": "#",
+    "instagram": "#",
+    "twitter": "#"
+  }
+}

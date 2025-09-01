@@ -1,0 +1,50 @@
+---
+layout: base.njk
+---
+
+<article class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Post Header -->
+        <header class="mb-12 text-center">
+            <div class="flex items-center justify-center text-sm text-gray-500 mb-4">
+                <time datetime="{{ date | date('%Y-%m-%d') }}">{{ date | date('%B %d, %Y') }}</time>
+                {% if category %}
+                <span class="mx-2">•</span>
+                <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-medium">{{ category }}</span>
+                {% endif %}
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">{{ title }}</h1>
+            
+            {% if excerpt %}
+            <p class="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">{{ excerpt }}</p>
+            {% endif %}
+        </header>
+
+        <!-- Post Content -->
+        <div class="prose prose-lg prose-primary max-w-none">
+            {{ content | safe }}
+        </div>
+
+        <!-- Post Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200">
+            <div class="bg-primary-50 rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Need Professional Help?</h3>
+                <p class="text-gray-600 mb-4">If you need assistance with any home repair project, our team is here to help.</p>
+                <a href="/contact/" class="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors">
+                    Get Free Estimate
+                </a>
+            </div>
+        </footer>
+
+        <!-- Navigation -->
+        <nav class="mt-12 pt-8 border-t border-gray-200">
+            <a href="/blog/" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
+                <svg class="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Blog
+            </a>
+        </nav>
+    </div>
+</article>
