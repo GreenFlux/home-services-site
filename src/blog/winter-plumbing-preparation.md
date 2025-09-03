@@ -27,6 +27,8 @@ When water freezes, it expands by about 9%, creating tremendous pressure inside 
 
 ## Essential Winterization Steps
 
+![Winter plumbing preparation](/images/services2.jpg)
+
 ### 1. Disconnect and Drain Outdoor Hoses
 
 Remove all garden hoses and drain them completely. Store hoses in a garage or shed to prevent damage from freezing temperatures.
@@ -36,6 +38,8 @@ Remove all garden hoses and drain them completely. Store hoses in a garage or sh
 Turn off the water supply to outdoor faucets and drain any remaining water. If you have frost-free spigots, they still need protection in extremely cold weather.
 
 ### 3. Insulate Exposed Pipes
+
+![Pipe insulation](/images/services4.jpg)
 
 Wrap pipes in unheated areas with foam pipe insulation or heat tape. Pay special attention to:
 - Pipes along exterior walls
@@ -100,6 +104,8 @@ Keep these items on hand for plumbing emergencies:
 - A reliable plumber's contact information
 
 ## Professional Prevention Services
+
+![Professional plumbing service](/images/services3.jpg)
 
 Consider having a professional plumber perform a winter inspection to:
 - Identify vulnerable pipes

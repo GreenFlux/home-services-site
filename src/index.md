@@ -5,8 +5,11 @@ description: "Trusted home repair and maintenance services for all your resident
 ---
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<section class="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+    <div class="absolute inset-0">
+        <img src="/images/banner.jpg" alt="Home Services" class="w-full h-full object-cover opacity-20">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">
                 Professional Home Repair Services

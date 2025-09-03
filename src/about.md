@@ -30,33 +30,45 @@ description: "Learn about Home Repair Services - your trusted local home repair 
                     Whether it's a minor repair or a major project, we approach every job with the same level of professionalism and attention to detail. Your home is your sanctuary, and we're here to help keep it that way.
                 </p>
             </div>
-            <div class="bg-gray-100 rounded-lg p-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">By the Numbers</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Years in Business</span>
-                        <span class="text-2xl font-bold text-primary-600">12+</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Happy Customers</span>
-                        <span class="text-2xl font-bold text-primary-600">5,000+</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Projects Completed</span>
-                        <span class="text-2xl font-bold text-primary-600">15,000+</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Customer Satisfaction</span>
-                        <span class="text-2xl font-bold text-primary-600">99%</span>
-                    </div>
-                </div>
+            <div class="relative overflow-hidden rounded-lg shadow-xl">
+                <img src="/images/banner.jpg" alt="Home Services Team" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- By the Numbers -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">By the Numbers</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Our track record speaks for itself. Years of dedicated service and countless satisfied customers.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-4xl font-bold text-primary-600 mb-2">12+</div>
+                <div class="text-gray-600">Years in Business</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-primary-600 mb-2">5,000+</div>
+                <div class="text-gray-600">Happy Customers</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-primary-600 mb-2">15,000+</div>
+                <div class="text-gray-600">Projects Completed</div>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-primary-600 mb-2">99%</div>
+                <div class="text-gray-600">Customer Satisfaction</div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Our Values -->
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
@@ -70,16 +82,16 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 </section>
 
 <!-- Our Team -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Professional Team</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                 Our skilled technicians are the backbone of our success. Each team member brings expertise, professionalism, and a commitment to excellence.
             </p>
         </div>
         <!-- IMPORTANT: NO BLANK LINE! Markdown will insert <p> tags and break layout -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start"><div class="text-center p-6"><div class="w-24 h-24 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><h3 class="text-xl font-semibold mb-2 text-gray-900">Licensed Professionals</h3><p class="text-gray-600">All our technicians are fully licensed and certified in their respective trades, ensuring quality workmanship.</p></div><div class="text-center p-6"><div class="w-24 h-24 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.909V17h2V9L12 3z"/></svg></div><h3 class="text-xl font-semibold mb-2 text-gray-900">Ongoing Training</h3><p class="text-gray-600">We invest in continuous education to keep our team updated on the latest industry standards and techniques.</p></div><div class="text-center p-6"><div class="w-24 h-24 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 7.45 1 8 1S9 1.45 9 2V4H15V2C15 1.45 15.45 1 16 1S17 1.45 17 2V4H20C21.11 4 22 4.89 22 6V20C22 21.11 21.11 22 20 22H4C2.89 22 2 21.11 2 20V6C2 4.89 2.89 4 4 4H7Z"/></svg></div><h3 class="text-xl font-semibold mb-2 text-gray-900">Award Winners</h3><p class="text-gray-600">Recognized by local business associations for excellence in customer service and community involvement.</p></div></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team1.jpg" alt="Team Member 1" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 1</h3><p class="text-primary-600 text-sm mb-3">Senior Technician</p><p class="text-gray-600">Expert technician with over 10 years of experience in residential repairs and maintenance.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team2.jpg" alt="Team Member 2" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 2</h3><p class="text-primary-600 text-sm mb-3">Lead Specialist</p><p class="text-gray-600">Specialized in electrical and HVAC systems with comprehensive certifications.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team3.jpg" alt="Team Member 3" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 3</h3><p class="text-primary-600 text-sm mb-3">Project Manager</p><p class="text-gray-600">Ensures smooth project execution and exceptional customer satisfaction.</p></div></div></div>
     </div>
 </section>
 

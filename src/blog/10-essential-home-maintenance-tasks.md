@@ -18,6 +18,8 @@ Regular home maintenance is the key to preventing small problems from becoming e
 
 ## 1. Clean and Inspect Gutters Seasonally
 
+![Gutter maintenance](/images/services1.jpg)
+
 Clogged gutters can cause water damage to your roof, siding, and foundation. Clean them at least twice a year and inspect for:
 - Loose or missing hardware
 - Cracks or holes
@@ -36,6 +38,8 @@ Test all detectors monthly and replace batteries twice a year. Replace the entir
 Lint buildup in dryer vents is a fire hazard and reduces efficiency. Clean the lint trap after every load and have the entire vent system professionally cleaned annually.
 
 ## 5. Check for Water Leaks
+
+![Plumbing inspection](/images/services2.jpg)
 
 Inspect under sinks, around toilets, and near water heaters monthly. Look for:
 - Water stains or discoloration
@@ -56,6 +60,8 @@ Flush your water heater annually to remove sediment buildup. Check the temperatu
 Keep vegetation at least 3 feet away from your home's exterior. Trim branches that overhang your roof to prevent damage during storms.
 
 ## 9. Inspect Your Roof
+
+![Roof inspection](/images/services3.jpg)
 
 Look for missing, damaged, or curling shingles. Check flashing around chimneys and vents. Address small issues before they become major problems.
 
