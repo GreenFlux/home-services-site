@@ -48,6 +48,9 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/></svg>">
     
     <!-- Animation Library -->
@@ -215,6 +218,8 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/assets/js/main.js"></script>
     
     <!-- Scroll Animation Script -->
@@ -253,6 +258,27 @@
                 }
                 observer.observe(el);
             });
+        });
+    </script>
+    
+    <!-- Initialize Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            if($('.testimonials-carousel').length) {
+                $('.testimonials-carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    pauseOnHover: true,
+                    arrows: true,
+                    adaptiveHeight: true,
+                    cssEase: 'ease-in-out'
+                });
+            }
         });
     </script>
 </body>

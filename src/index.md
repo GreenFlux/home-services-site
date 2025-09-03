@@ -84,6 +84,112 @@ description: "Trusted home repair and maintenance services for all your resident
     </div>
 </section>
 
+<!-- Testimonials Section -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                What Our Customers Say
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Don't just take our word for it. Here's what homeowners in our community have to say about our services.
+            </p>
+        </div>
+        
+        <div class="testimonials-carousel">
+            <div class="px-4">
+                <div class="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 italic leading-relaxed">"Outstanding service! They fixed our plumbing issue quickly and professionally. The technician was knowledgeable, courteous, and left everything spotless. Highly recommend!"</p>
+                    <div class="font-semibold text-gray-900 text-lg">- Customer 1</div>
+                    <div class="text-gray-500">Homeowner, Northside</div>
+                </div>
+            </div>
+            <div class="px-4">
+                <div class="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 italic leading-relaxed">"Emergency HVAC repair on a weekend - they came within an hour! Fair pricing, excellent work, and the technician explained everything clearly. Couldn't be happier with the service."</p>
+                    <div class="font-semibold text-gray-900 text-lg">- Customer 2</div>
+                    <div class="text-gray-500">Homeowner, Downtown</div>
+                </div>
+            </div>
+            <div class="px-4">
+                <div class="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 italic leading-relaxed">"They've been our go-to for all home repairs for 3 years now. Always reliable, professional, and honest about what needs to be done. True professionals who care about their customers."</p>
+                    <div class="font-semibold text-gray-900 text-lg">- Customer 3</div>
+                    <div class="text-gray-500">Homeowner, Eastside</div>
+                </div>
+            </div>
+            <div class="px-4">
+                <div class="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 italic leading-relaxed">"Complete bathroom renovation was perfect! They stayed on budget, finished on time, and the quality is exceptional. The team was respectful of our home and family. Absolutely recommend!"</p>
+                    <div class="font-semibold text-gray-900 text-lg">- Customer 4</div>
+                    <div class="text-gray-500">Homeowner, Westside</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .slick-dots {
+            bottom: -40px;
+        }
+        .slick-dots li button:before {
+            color: #9CA3AF;
+            font-size: 12px;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #3B82F6;
+        }
+        .slick-prev, .slick-next {
+            z-index: 1;
+        }
+        .slick-prev {
+            left: -40px;
+        }
+        .slick-next {
+            right: -40px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: #3B82F6;
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            .slick-prev {
+                left: 10px;
+            }
+            .slick-next {
+                right: 10px;
+            }
+        }
+    </style>
+</section>
+
 <!-- CTA Section -->
 <section class="py-20 bg-primary-600 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
