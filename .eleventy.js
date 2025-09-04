@@ -1,4 +1,43 @@
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, alt, sizes = "100vw", loading = "lazy") {
+  // Handle both absolute and relative paths
+  let inputPath = src;
+  if (src.startsWith('/')) {
+    inputPath = `./src${src}`;
+  }
+  
+  let metadata = await Image(inputPath, {
+    widths: [320, 640, 1024, 1920],
+    formats: ["webp", "jpeg"],
+    outputDir: "./_site/img/",
+    urlPath: "/img/",
+    sharpOptions: {
+      jpeg: {
+        quality: 85,
+        progressive: true
+      },
+      webp: {
+        quality: 80
+      }
+    }
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
 module.exports = function(eleventyConfig) {
+  // Add image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("images");

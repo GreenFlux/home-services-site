@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^6.0.4",
     "@unocss/cli": "^0.58.0",
     "concurrently": "^8.2.2",
     "unocss": "^0.58.0"
-  },
-  "dependencies": {}
+  }
 }
