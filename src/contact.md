@@ -292,6 +292,3 @@ description: "Get in touch with Home Repair Services for a free estimate on your
 </style>
 
 <script src="/assets/js/contact-form.js"></script>
-<script async defer 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU3oOR56qFrQkloTur5D9EdtoCD9GyOGA&libraries=places&callback=initMap">
-</script>

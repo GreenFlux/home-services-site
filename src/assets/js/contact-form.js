@@ -2,31 +2,44 @@ let autocompleteService;
 let selectedPlace = null;
 let userLocation = null;
 let debounceTimer = null;
+let mapsLoaded = false;
+let mapsLoading = false;
+let pendingCallbacks = [];
+
+function loadGoogleMapsAPI() {
+    if (mapsLoaded || mapsLoading) {
+        return;
+    }
+    
+    mapsLoading = true;
+    
+    // Create and append the script tag dynamically
+    const script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCU3oOR56qFrQkloTur5D9EdtoCD9GyOGA&libraries=places&callback=initMap';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    
+    console.log('Loading Google Maps API on demand...');
+}
 
 function initMap() {
+    mapsLoaded = true;
+    mapsLoading = false;
+    
     // Initialize the Places services (no map needed for autocomplete service)
     autocompleteService = new google.maps.places.AutocompleteService();
     
+    console.log('Google Maps API loaded successfully');
+    
+    // Execute any pending callbacks
+    pendingCallbacks.forEach(callback => callback());
+    pendingCallbacks = [];
+    
+    // If there's already text in the address field, trigger predictions
     const addressInput = document.getElementById('address');
-    
-    if (addressInput) {
-        // Add event listeners for custom autocomplete
-        addressInput.addEventListener('input', handleAddressInput);
-        addressInput.addEventListener('keydown', handleAddressKeydown);
-        addressInput.addEventListener('blur', handleAddressBlur);
-        addressInput.addEventListener('focus', handleAddressFocus);
-    }
-
-    // Initialize form submission handler
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleFormSubmit);
-    }
-    
-    // Add phone number formatting
-    const phoneInput = document.getElementById('phone');
-    if (phoneInput) {
-        phoneInput.addEventListener('input', formatPhoneNumber);
+    if (addressInput && addressInput.value.length >= 3) {
+        fetchAddressPredictions(addressInput.value);
     }
 }
 
@@ -74,13 +87,27 @@ function handleAddressInput(event) {
         return;
     }
     
-    // Set up debounced autocomplete request
-    debounceTimer = setTimeout(() => {
-        fetchAddressPredictions(input);
-    }, 300);
+    // Load Maps API if not loaded, then fetch predictions
+    if (!mapsLoaded) {
+        if (!mapsLoading) {
+            loadGoogleMapsAPI();
+        }
+        // Queue the prediction fetch for when Maps API loads
+        pendingCallbacks.push(() => fetchAddressPredictions(input));
+    } else {
+        // Set up debounced autocomplete request
+        debounceTimer = setTimeout(() => {
+            fetchAddressPredictions(input);
+        }, 300);
+    }
 }
 
 function fetchAddressPredictions(input) {
+    if (!autocompleteService) {
+        console.log('Autocomplete service not ready yet');
+        return;
+    }
+    
     const request = {
         input: input,
         componentRestrictions: { country: 'us' },
@@ -192,8 +219,13 @@ function handleAddressFocus(event) {
         requestUserLocation();
     }
     
+    // Load Google Maps API on first focus if not loaded
+    if (!mapsLoaded && !mapsLoading) {
+        loadGoogleMapsAPI();
+    }
+    
     const input = event.target.value.trim();
-    if (input.length >= 3) {
+    if (input.length >= 3 && mapsLoaded) {
         fetchAddressPredictions(input);
     }
 }
@@ -322,6 +354,27 @@ window.gm_authFailure = function() {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // The initMap function will be called by the Google Maps API callback
-    console.log('DOM loaded. Waiting for Google Maps API to initialize...');
+    const addressInput = document.getElementById('address');
+    
+    if (addressInput) {
+        // Add event listeners for custom autocomplete
+        addressInput.addEventListener('input', handleAddressInput);
+        addressInput.addEventListener('keydown', handleAddressKeydown);
+        addressInput.addEventListener('blur', handleAddressBlur);
+        addressInput.addEventListener('focus', handleAddressFocus);
+    }
+
+    // Initialize form submission handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleFormSubmit);
+    }
+    
+    // Add phone number formatting
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', formatPhoneNumber);
+    }
+    
+    console.log('Contact form initialized. Google Maps API will load on demand when address field is focused.');
 });

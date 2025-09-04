@@ -31,7 +31,7 @@ description: "Learn about Home Repair Services - your trusted local home repair 
                 </p>
             </div>
             <div class="relative overflow-hidden rounded-lg shadow-xl">
-                <img src="/images/banner.jpg" alt="Home Services Team" class="w-full h-full object-cover">
+                <img src="/images/banner.jpg" alt="Home Services Team" class="w-full h-full object-cover" loading="lazy">
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@ description: "Learn about Home Repair Services - your trusted local home repair 
             </p>
         </div>
         <!-- IMPORTANT: NO BLANK LINE! Markdown will insert <p> tags and break layout -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team1.jpg" alt="Team Member 1" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 1</h3><p class="text-primary-600 text-sm mb-3">Senior Technician</p><p class="text-gray-600">Expert technician with over 10 years of experience in residential repairs and maintenance.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team2.jpg" alt="Team Member 2" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 2</h3><p class="text-primary-600 text-sm mb-3">Lead Specialist</p><p class="text-gray-600">Specialized in electrical and HVAC systems with comprehensive certifications.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team3.jpg" alt="Team Member 3" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 3</h3><p class="text-primary-600 text-sm mb-3">Project Manager</p><p class="text-gray-600">Ensures smooth project execution and exceptional customer satisfaction.</p></div></div></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team1.jpg" alt="Team Member 1" class="w-full h-48 object-cover" loading="lazy"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 1</h3><p class="text-primary-600 text-sm mb-3">Senior Technician</p><p class="text-gray-600">Expert technician with over 10 years of experience in residential repairs and maintenance.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team2.jpg" alt="Team Member 2" class="w-full h-48 object-cover" loading="lazy"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 2</h3><p class="text-primary-600 text-sm mb-3">Lead Specialist</p><p class="text-gray-600">Specialized in electrical and HVAC systems with comprehensive certifications.</p></div></div><div class="bg-white rounded-lg shadow-lg overflow-hidden"><img src="/images/team3.jpg" alt="Team Member 3" class="w-full h-48 object-cover" loading="lazy"><div class="p-6"><h3 class="text-xl font-semibold mb-2 text-gray-900">Teammate 3</h3><p class="text-primary-600 text-sm mb-3">Project Manager</p><p class="text-gray-600">Ensures smooth project execution and exceptional customer satisfaction.</p></div></div></div>
     </div>
 </section>
 

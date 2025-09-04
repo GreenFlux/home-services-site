@@ -7,7 +7,7 @@ description: "Trusted home repair and maintenance services for all your resident
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white">
     <div class="absolute inset-0">
-        <img src="/images/banner.jpg" alt="Home Services" class="w-full h-full object-cover opacity-20">
+        <img src="/images/banner.jpg" alt="Home Services" class="w-full h-full object-cover opacity-20" loading="eager">
     </div>
     <div class="relative container py-24">
         <div class="text-center">
