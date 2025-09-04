@@ -5,8 +5,8 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 ---
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white section">
+    <div class="container text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">About Home Repair Services</h1>
         <p class="text-xl text-primary-100 max-w-3xl mx-auto">
             Your trusted partner for reliable, professional home repair and maintenance services.
@@ -15,8 +15,8 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 </section>
 
 <!-- Our Story -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section bg-white">
+    <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
@@ -38,11 +38,11 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 </section>
 
 <!-- By the Numbers -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section-alt">
+    <div class="container">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">By the Numbers</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 class="section-title">By the Numbers</h2>
+            <p class="section-subtitle">
                 Our track record speaks for itself. Years of dedicated service and countless satisfied customers.
             </p>
         </div>
@@ -68,25 +68,25 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 </section>
 
 <!-- Our Values -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section bg-white">
+    <div class="container">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p class="section-subtitle">
                 These core principles guide everything we do, from the smallest repair to the largest project.
             </p>
         </div>
         <!-- IMPORTANT: NO BLANK LINE! Markdown will insert <p> tags and break layout -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start"><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Integrity</h3><p class="text-gray-600">We believe in honest communication, fair pricing, and doing what's right for our customers.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Quality</h3><p class="text-gray-600">Every job is completed to the highest standards using quality materials and proven techniques.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9v8l10-12h-9V2z"/></svg></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Reliability</h3><p class="text-gray-600">We show up on time, communicate clearly, and deliver on our promises every single time.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Innovation</h3><p class="text-gray-600">We stay current with the latest techniques and technologies to serve you better.</p></div></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start"><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="shield-check" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Integrity</h3><p class="text-gray-600">We believe in honest communication, fair pricing, and doing what's right for our customers.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="star" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Quality</h3><p class="text-gray-600">Every job is completed to the highest standards using quality materials and proven techniques.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="zap" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Reliability</h3><p class="text-gray-600">We show up on time, communicate clearly, and deliver on our promises every single time.</p></div><div class="text-center p-6"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="lightbulb" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3 text-gray-900">Innovation</h3><p class="text-gray-600">We stay current with the latest techniques and technologies to serve you better.</p></div></div>
     </div>
 </section>
 
 <!-- Our Team -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section-alt">
+    <div class="container">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p class="section-subtitle">
                 Our skilled technicians are the backbone of our success. Each team member brings expertise, professionalism, and a commitment to excellence.
             </p>
         </div>
@@ -103,8 +103,8 @@ description: "Learn about Home Repair Services - your trusted local home repair 
      4. Keep all HTML in a section continuous without line breaks between elements
      5. Use inline-block for buttons, NOT w-full to prevent full-width stretching
 -->
-<section class="py-20 bg-primary-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="section bg-primary-50">
+    <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="text-3xl font-bold text-gray-900 mb-6">Licensed, Bonded & Insured</h2>
@@ -165,13 +165,13 @@ description: "Learn about Home Repair Services - your trusted local home repair 
 </section>
 
 <!-- Community Involvement -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<section class="section bg-white">
+    <div class="container text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Serving Our Community</h2>
         <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
             We're more than just a service provider - we're your neighbors. Our commitment to the community goes beyond home repairs, as we actively support local charities, participate in community events, and help make our neighborhood a better place to live.
         </p>
         <!-- IMPORTANT: NO BLANK LINE! Markdown will insert <p> tags and break layout -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start"><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div><h3 class="text-xl font-semibold mb-3">Local Business</h3><p class="text-gray-600">Proudly locally owned and operated, supporting the local economy and community.</p></div><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.859 0-7 3.141-7 7v1h17z"/></svg></div><h3 class="text-xl font-semibold mb-3">Community Support</h3><p class="text-gray-600">Active participants in local charities and community improvement initiatives.</p></div><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.66c.03-.08.06-.17.09-.25.07-.15.11-.24.11-.25H12c0-.86-.37-1.69-.8-2.4C9.87 15.12 9.87 14.88 12 15c2.14 0 4-1.86 4-4s-1.86-4-4-4-4 1.86-4 4 1.86 4 4 4z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm4-2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg></div><h3 class="text-xl font-semibold mb-3">Environmental Responsibility</h3><p class="text-gray-600">Committed to eco-friendly practices and sustainable repair solutions.</p></div></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start"><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="home" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3">Local Business</h3><p class="text-gray-600">Proudly locally owned and operated, supporting the local economy and community.</p></div><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="users" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3">Community Support</h3><p class="text-gray-600">Active participants in local charities and community improvement initiatives.</p></div><div class="p-6 text-center"><div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="leaf" class="w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-3">Environmental Responsibility</h3><p class="text-gray-600">Committed to eco-friendly practices and sustainable repair solutions.</p></div></div>
     </div>
 </section>

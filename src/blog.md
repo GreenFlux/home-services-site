@@ -79,7 +79,7 @@ description: "Home repair tips, maintenance guides, and expert advice from the p
             <p class="text-gray-600 mb-6">Get the latest home maintenance tips and repair advice delivered to your inbox.</p>
             <div class="max-w-md mx-auto flex gap-4">
                 <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
-                <button class="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors">Subscribe</button>
+                <button class="btn-primary">Subscribe</button>
             </div>
         </div>
     </div>
