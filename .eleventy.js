@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 async function imageShortcode(src, alt, sizes = "100vw", loading = "lazy") {
   // Handle both absolute and relative paths
@@ -35,12 +36,23 @@ async function imageShortcode(src, alt, sizes = "100vw", loading = "lazy") {
 }
 
 module.exports = function(eleventyConfig) {
+  // Add sitemap plugin
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://homerepairservices.com",
+      lastModifiedProperty: "modified",
+      changeFreq: "weekly",
+      priority: 0.8,
+    },
+  });
+  
   // Add image shortcode
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   
   // Watch for changes in CSS
   eleventyConfig.addWatchTarget("src/assets/css/");
