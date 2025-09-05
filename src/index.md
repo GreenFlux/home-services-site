@@ -6,7 +6,7 @@ description: "Trusted home repair and maintenance services for all your resident
 
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white">
-    <div class="absolute inset-0">
+    <div class="absolute inset-0 hero-overlay">
         {% image "/images/banner.jpg", "Home Services", "100vw", "eager" %}
     </div>
     <div class="relative container py-24">

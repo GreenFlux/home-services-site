@@ -100,7 +100,7 @@
         picture img{width:100%;height:100%;object-fit:cover;}
         .absolute picture img{position:absolute;inset:0;}
         /* Blue overlay for banner */
-        .absolute::after{content:'';position:absolute;inset:0;background-color:rgba(37,99,235,0.8);pointer-events:none;}
+        .hero-overlay::after{content:'';position:absolute;inset:0;background-color:rgba(37,99,235,0.8);pointer-events:none;}
         @media(min-width:640px){.container{padding-left:1.5rem;padding-right:1.5rem;}}
         @media(min-width:768px){.md\:text-6xl{font-size:3.75rem;line-height:1;}.md\:text-2xl{font-size:1.5rem;line-height:2rem;}.md\:block{display:block;}.md\:hidden{display:none;}}
         @media(min-width:1024px){.container{padding-left:2rem;padding-right:2rem;}}
@@ -140,6 +140,10 @@
                             {{ item.text }}
                         </a>
                         {% endfor %}
+                        <!-- LocalPros CTA Button -->
+                        <a href="/localpros/" class="ml-4 bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg {% if page.url == '/localpros/' %}bg-primary-700{% endif %}">
+                            Get LocalPros!
+                        </a>
                     </div>
                 </div>
 
@@ -162,6 +166,10 @@
                     {{ item.text }}
                 </a>
                 {% endfor %}
+                <!-- LocalPros CTA Button Mobile -->
+                <a href="/localpros/" class="block mx-2 mt-2 bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-primary-700 transition-colors shadow-lg {% if page.url == '/localpros/' %}bg-primary-700{% endif %}">
+                    Get LocalPros!
+                </a>
             </div>
         </div>
     </nav>

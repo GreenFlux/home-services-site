@@ -86,10 +86,6 @@ export default defineConfig({
     ['visible', 'opacity-100 translate-y-0 translate-x-0']
   ],
   rules: [
-    // Global anchor tag styling
-    ['a', { color: '#2563eb', 'text-decoration': 'none' }],
-    ['a:hover', { color: '#1d4ed8' }],
-    
     // Custom stagger animation rule
     [/^stagger-(\d+)$/, ([, d]) => ({
       'transition-delay': `${parseInt(d) * 100}ms`
