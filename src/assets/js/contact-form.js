@@ -293,23 +293,17 @@ async function handleFormSubmit(event) {
     
     // Add location data to FormData
     if (selectedPlace) {
-        // User selected from autocomplete
+        // User selected from autocomplete - include address coordinates
         formData.append('formatted_address', selectedPlace.formatted_address);
         formData.append('place_id', selectedPlace.place_id);
         formData.append('lat', selectedPlace.lat || '');
         formData.append('lng', selectedPlace.lng || '');
     } else {
-        // User typed address manually
+        // User typed address manually - no coordinates available
         formData.append('formatted_address', addressValue);
         formData.append('place_id', '');
         formData.append('lat', '');
         formData.append('lng', '');
-    }
-    
-    // Add user's current location if available (for distance calculation)
-    if (userLocation) {
-        formData.append('user_lat', userLocation.lat);
-        formData.append('user_lng', userLocation.lng);
     }
     
     try {
