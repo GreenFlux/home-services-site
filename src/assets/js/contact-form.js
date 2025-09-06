@@ -165,8 +165,28 @@ function selectPrediction(prediction) {
     // Store the selected place data
     selectedPlace = {
         place_id: prediction.place_id,
-        formatted_address: prediction.description
+        formatted_address: prediction.description,
+        lat: null,
+        lng: null
     };
+    
+    // Get place details to fetch coordinates
+    if (mapsLoaded && prediction.place_id) {
+        const placesService = new google.maps.places.PlacesService(document.createElement('div'));
+        placesService.getDetails(
+            {
+                placeId: prediction.place_id,
+                fields: ['geometry']
+            },
+            (place, status) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK && place.geometry) {
+                    selectedPlace.lat = place.geometry.location.lat();
+                    selectedPlace.lng = place.geometry.location.lng();
+                    console.log('Coordinates fetched:', selectedPlace.lat, selectedPlace.lng);
+                }
+            }
+        );
+    }
     
     // Add visual feedback that valid address is selected
     addressInput.style.borderColor = '#10b981';
@@ -233,11 +253,14 @@ function handleAddressFocus(event) {
 async function handleFormSubmit(event) {
     event.preventDefault();
     
-    // Validate that a valid address was selected from autocomplete
+    // Get address input value
     const addressInput = document.getElementById('address');
-    if (!selectedPlace) {
+    const addressValue = addressInput.value.trim();
+    
+    // Check if address field has a value (allow plain text if no autocomplete selection)
+    if (!addressValue) {
         addressInput.focus();
-        addressInput.setCustomValidity('Please select a valid address from the dropdown suggestions');
+        addressInput.setCustomValidity('Please enter an address');
         addressInput.reportValidity();
         return;
     } else {
@@ -268,9 +291,26 @@ async function handleFormSubmit(event) {
     // Create FormData for multipart/form-data submission
     const formData = new FormData(form);
     
-    // Add selected place data to FormData
-    formData.append('formatted_address', selectedPlace.formatted_address);
-    formData.append('place_id', selectedPlace.place_id);
+    // Add location data to FormData
+    if (selectedPlace) {
+        // User selected from autocomplete
+        formData.append('formatted_address', selectedPlace.formatted_address);
+        formData.append('place_id', selectedPlace.place_id);
+        formData.append('lat', selectedPlace.lat || '');
+        formData.append('lng', selectedPlace.lng || '');
+    } else {
+        // User typed address manually
+        formData.append('formatted_address', addressValue);
+        formData.append('place_id', '');
+        formData.append('lat', '');
+        formData.append('lng', '');
+    }
+    
+    // Add user's current location if available (for distance calculation)
+    if (userLocation) {
+        formData.append('user_lat', userLocation.lat);
+        formData.append('user_lng', userLocation.lng);
+    }
     
     try {
         // Submit to Google Apps Script endpoint
@@ -375,6 +415,7 @@ function resetAddressSelection() {
     if (addressInput) {
         addressInput.style.borderColor = '';
         addressInput.style.backgroundColor = '';
+        addressInput.setCustomValidity('');
     }
 }
 
