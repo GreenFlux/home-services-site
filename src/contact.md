@@ -272,6 +272,24 @@ description: "Get in touch with Home Repair Services for a free estimate on your
     transition: width 2s linear;
 }
 
+/* Loading spinner for submit button */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 /* Form styling */
 #contactForm input,
 #contactForm select,

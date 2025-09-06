@@ -230,7 +230,7 @@ function handleAddressFocus(event) {
     }
 }
 
-function handleFormSubmit(event) {
+async function handleFormSubmit(event) {
     event.preventDefault();
     
     // Validate that a valid address was selected from autocomplete
@@ -255,25 +255,64 @@ function handleFormSubmit(event) {
         phoneInput.setCustomValidity('');
     }
     
-    // Get form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+    // Get form element and submit button
+    const form = event.target;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
     
-    // Add selected place data
-    data.selectedAddress = {
-        formatted_address: selectedPlace.formatted_address,
-        place_id: selectedPlace.place_id
-    };
+    // Disable submit button and show loading state
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<span class="loading-spinner"></span>Sending...';
+    submitButton.style.opacity = '0.7';
     
-    // Display submission data (in a real app, this would be sent to a server)
-    console.log('Form submitted with data:', data);
+    // Create FormData for multipart/form-data submission
+    const formData = new FormData(form);
     
-    // Show success modal instead of alert
-    showSuccessModal();
+    // Add selected place data to FormData
+    formData.append('formatted_address', selectedPlace.formatted_address);
+    formData.append('place_id', selectedPlace.place_id);
     
-    // Reset form
-    event.target.reset();
-    resetAddressSelection();
+    try {
+        // Submit to Google Apps Script endpoint
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzDjwqIJm7VNBwSno6EwY4XGaGocW8gnzZR-8eDMm-bKQbds0m7F6MjtcYyVrtqy5Fd/exec', {
+            method: 'POST',
+            body: formData
+        });
+        
+        // Check if response is ok
+        if (!response.ok) {
+            throw new Error(`Server responded with status: ${response.status}`);
+        }
+        
+        // Parse response (Google Apps Script usually returns JSON)
+        const result = await response.json();
+        
+        // Check for success in response
+        if (result.result === 'success' || result.status === 'success' || response.ok) {
+            // Show success modal
+            showSuccessModal();
+            
+            // Reset form
+            form.reset();
+            resetAddressSelection();
+            
+            console.log('Form submitted successfully:', result);
+        } else {
+            throw new Error(result.message || 'Form submission failed');
+        }
+        
+    } catch (error) {
+        console.error('Form submission error:', error);
+        
+        // Show error message to user
+        alert('We encountered an error submitting your request. Please try again or call us directly at the number above.');
+        
+    } finally {
+        // Re-enable submit button and restore original text
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+        submitButton.style.opacity = '1';
+    }
 }
 
 function validateUSPhoneNumber(phone) {
