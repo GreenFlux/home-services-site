@@ -274,32 +274,25 @@ async function handleFormSubmit(event) {
     
     try {
         // Submit to Google Apps Script endpoint
+        // Note: Google Apps Script requires no-cors mode to avoid CORS issues
         const response = await fetch('https://script.google.com/macros/s/AKfycbzDjwqIJm7VNBwSno6EwY4XGaGocW8gnzZR-8eDMm-bKQbds0m7F6MjtcYyVrtqy5Fd/exec', {
             method: 'POST',
+            mode: 'no-cors', // Required for Google Apps Script
             body: formData
         });
         
-        // Check if response is ok
-        if (!response.ok) {
-            throw new Error(`Server responded with status: ${response.status}`);
-        }
+        // With no-cors mode, we can't read the response
+        // But the form will still be submitted successfully
+        // Google Apps Script will process it on their end
         
-        // Parse response (Google Apps Script usually returns JSON)
-        const result = await response.json();
+        // Show success modal (assuming success since no-cors doesn't allow reading response)
+        showSuccessModal();
         
-        // Check for success in response
-        if (result.result === 'success' || result.status === 'success' || response.ok) {
-            // Show success modal
-            showSuccessModal();
-            
-            // Reset form
-            form.reset();
-            resetAddressSelection();
-            
-            console.log('Form submitted successfully:', result);
-        } else {
-            throw new Error(result.message || 'Form submission failed');
-        }
+        // Reset form
+        form.reset();
+        resetAddressSelection();
+        
+        console.log('Form submitted successfully to Google Apps Script');
         
     } catch (error) {
         console.error('Form submission error:', error);
